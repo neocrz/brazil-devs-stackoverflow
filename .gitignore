@@ -1,1 +1,5 @@
 src/
+code/metabase.db.mv.db
+code/metabase.db.trace.db
+code/plugins/
+

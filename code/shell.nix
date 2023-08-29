@@ -6,14 +6,12 @@ let
   pythonpkgs = python3.withPackages (ps: with ps; [
     notebook
     pandas
-    # pypandoc
+    sqlalchemy
   ]);
 in
 mkShell {
-  buildInputs = [ 
+  buildInputs = [
     pythonpkgs 
     metabase # PowerBI open-source alternative
-    pandoc # notebook to pdf
-    texlive.combined.scheme-tetex
   ];
 }
